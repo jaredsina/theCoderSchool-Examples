@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='index.js' defer></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Document</title>
+</head>
+<body>
+  <main>
+    <div id="instructions">
+      Scroll the page to make the element change color when it passes the scrollOffset point.
+    </div>
+    <div class="vh-container">
+      <div class="vh-line"></div>
+      <p class="vh-display">
+        window.innerHeight = <span id="window-height"></span>px
+      </p>
+    </div>
+    <div class="scroll-offset">
+        scrollOffset=100px
+    </div>
+    <div class="element-container">
+      <div class="js-scroll">
+        <p>element.getBoundingClientRect().top= <span id="offset-top"></span>px</p>
+      </div>
+    </div>
+  </main>
+      <section class="scroll-container">
+          <div class="scroll-element js-scroll">
+          </div>
+          <div class="scroll-caption">
+            This animation fades in from the top.
+          </div>
+      </section>
+</body>
+</html>
